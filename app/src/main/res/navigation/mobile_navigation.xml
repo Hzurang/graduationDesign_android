@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_word">
+
+    <fragment
+        android:id="@+id/navigation_word"
+        android:name="com.example.english.ui.word.WordFragment"
+        android:label="@string/title_word"
+        tools:layout="@layout/fragment_word" />
+
+    <fragment
+        android:id="@+id/navigation_listen"
+        android:name="com.example.english.ui.listen.ListenFragment"
+        android:label="@string/title_listen"
+        tools:layout="@layout/fragment_listen" />
+
+    <fragment
+        android:id="@+id/navigation_essay"
+        android:name="com.example.english.ui.essay.EssayFragment"
+        android:label="@string/title_essay"
+        tools:layout="@layout/fragment_essay" />
+
+    <fragment
+        android:id="@+id/navigation_mine"
+        android:name="com.example.english.ui.mine.MineFragment"
+        android:label="@string/title_mine"
+        tools:layout="@layout/fragment_mine" />
+</navigation>
